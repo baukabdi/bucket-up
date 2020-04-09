@@ -39,6 +39,10 @@
 	width: 29%;
 }
 
+.content_wrapper {
+	overflow: hidden;
+}
+
 .content_wrapper .content_logo {
 	padding-bottom: 70px;
 }
@@ -226,6 +230,23 @@
 	text-align: center;
 }
 
+.product_descr_mobile {
+	font-family: Oswald;
+	font-weight: 500;
+	font-size: 13.5px;
+	color: #707070;
+	margin-top: 25px;
+	text-align: center;
+	display: none;
+}
+
+.content_wrapper .bank_mobile {
+	display: none;
+}
+
+.content_wrapper .bank_mobile img {
+	width: 20vw;
+}
 
 .content_wrapper .collection_row .upgrade_button {
 	display: block;
@@ -289,6 +310,117 @@
 }
 
 
+.upgrade_wrapper_mobile {
+	display: none;
+}
+
+
+.upgrade_wrapper_mobile .upgrade_button {
+	display: inline-block;
+	font-size: 27px;
+	font-family: Edo;
+	color: #fff;
+	background-color: #000;
+	padding: 1% 10% 1% 7%;
+	position: relative;
+}
+
+.upgrade_wrapper_mobile .upgrade_button .plus {
+	font-family: Edosz;
+	color: #E5282C;
+	font-size: 100px;
+	position: absolute;
+	right: -10px;
+	line-height: 0.5;
+}
+
+.upgrade_wrapper_mobile .save_text {
+	font-size: 20px;
+	font-family: Oswald;
+	color: #000;
+}
+
+.upgrade_wrapper_mobile .skip_text {
+	color: #828687;
+	font-size: 24px;
+	font-family: Oswald;
+	line-height: 1;
+	margin: 0;
+	display: block;
+	text-align: right;
+	margin-top: 30px;
+}
+
+.upgrade_wrapper_mobile .upbtn_row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+
+.upgrade_wrapper_mobile .upgrade_privacy {
+	font-family: BrandonGrotesque-Regular;
+	font-size: 12px;
+	margin-top: 30px;
+}
+
+.upgrade_wrapper_mobile .upgrade_privacy a {
+	color: #E5282C;
+}
+
+.upgrades_list_mobile {
+	display: none;
+	background-color: #000;
+	position: relative;
+	font-family: SuiGeneRisRg;
+	margin-top: 40px;
+}
+
+.upgrades_list_mobile a {
+	color: #828687;
+}
+
+.upgrades_list_mobile li {
+	list-style-type: none;
+	font-size: 22px;
+}
+
+.upgrades_list_mobile li:nth-child(2) a {
+	color: #fff;
+}
+
+.upgrades_list_mobile .big_number {
+	font-size: 36px;
+}
+
+.upgrades_list_mobile::before {
+	content: '';
+	display: block;
+	background-color: #000;
+	position: absolute;
+	left: -100%;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.upgrades_list_mobile::after {
+	content: '';
+	display: block;
+	background-color: #000;
+	position: absolute;
+	right: -100%;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
 .bucket_partners {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -302,6 +434,10 @@
 	padding-bottom: 100px;
 }
 
+.bucket_partners img {
+	width: 100%;
+}
+
 .bucket_partners a {
 	-webkit-transition: 0.5s ease-out;
 	-o-transition: 0.5s ease-out;
@@ -310,4 +446,130 @@
 
 .bucket_partners a:hover {
 	opacity: 0.5;
+}
+
+.content_right_top {
+	padding-top: 25px;
+}
+
+.content_right_top a {
+	text-decoration: none;
+}
+
+.content_right_top .mobile_logo img {
+	max-width: 125px;
+	margin-left: 20px;
+}
+
+.price_wrapper_mobile {
+	display: none;
+}
+
+.price_wrapper_mobile .price_item {
+	font-size: 48px;
+	font-family: SuiGeneRisRg;
+	color: #000;
+	line-height: 1;
+	display: inline-block;
+}
+
+.price_wrapper_mobile .price_dop {
+	color: #828687;
+	font-size: 18px;
+	font-family: Oswald;
+	line-height: 1;
+	margin: 0;
+	text-align: right;
+}
+
+.price_wrapper_mobile .price_dop:first-child {
+	display: inline-block;
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+.price_wrapper_mobile .price_dop:last-child {
+	max-width: 221px;
+}
+
+@media screen and (max-width: 1024px) {
+	.content_wrapper .content_left {
+			display: none;
+	}
+
+	.content_wrapper .content_right {
+			width: 100%;
+			padding-left: 21px;
+			padding-right: 21px;
+			background-color: #fff;
+	}
+
+	.content_wrapper .bank_mobile {
+		display: block;
+	}
+
+	.content_wrapper .collection_row .left {
+		width: 100%;
+		padding-left: 30px;
+	}
+
+	.content_wrapper .collection_row .right {
+		display: none;
+	}
+	
+	.content_wrapper .content_right .rtitle_row {
+		flex-wrap: wrap;
+	}
+	.content_wrapper .content_right .rtitle_row .left {
+		width: 100%;
+	}
+	.content_wrapper .content_right .rtitle_row .ultimate_title {
+		font-size: 64px;
+	}
+
+	.content_wrapper .content_right .rtitle_row .left p {
+		font-size: 14.5px;
+	}
+
+	.content_wrapper .collection_row .product_descr {
+		display: none;
+	}
+
+	.product_descr_mobile {
+		display: block;
+	}
+
+	.content_wrapper .content_right .rtitle_row .right {
+		display: none;
+	}
+
+	.price_wrapper_mobile {
+		display: block;
+	}
+
+	.content_wrapper .collection_row .product_row {
+		padding-top: 45px;
+	}
+
+	.upgrade_wrapper_mobile {
+		display: block;
+	}
+
+	.upgrades_list_mobile {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.bucket_partners {
+		margin-top: 35px;
+		padding-bottom: 35px;
+	}
+
+	.bucket_partners a:nth-last-child(n+2) {
+		margin-right: 25px;
+
+	}
+
 }
