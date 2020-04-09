@@ -380,6 +380,7 @@
 	position: relative;
 	font-family: SuiGeneRisRg;
 	margin-top: 40px;
+	padding: 0;
 }
 
 .upgrades_list_mobile a {
