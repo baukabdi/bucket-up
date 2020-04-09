@@ -451,6 +451,7 @@
 
 .content_right_top {
 	padding-top: 25px;
+	display: none;
 }
 
 .content_right_top a {
@@ -570,7 +571,10 @@
 
 	.bucket_partners a:nth-last-child(n+2) {
 		margin-right: 25px;
+	}
 
+	.content_right_top {
+		display: block;
 	}
 
 }
